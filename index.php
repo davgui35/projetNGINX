@@ -3,6 +3,7 @@ $user = "newuser";
 $pass = "password";
 $errors = [];
 
+<<<<<<< HEAD
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=newbase', $user, $pass);
 	  // Test de validation du formulaire
@@ -25,6 +26,9 @@ try {
 } catch (PDOException $e) {
     print "Erreur !: " . $e->getMessage() . "<br/>";
 }
+=======
+echo "Hello World";
+>>>>>>> 8b33df35a950c6d238ad6ab4dc2bb4e40b3c57b8
 ?>
 
 <!doctype html>
