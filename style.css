@@ -1,0 +1,11 @@
+input{
+margin: 15px;
+}
+
+.errors {
+    background: crimson;
+    color:whitesmoke;
+    padding: 5px 10px;
+    margin-left: 30px;
+    font-size: 10px;
+}
