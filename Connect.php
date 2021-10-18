@@ -41,7 +41,8 @@ class Connect{
     /**
      * find user by name
      */
-    public function find($sql, Array $condition = null) {
+    public function find($sql, Array $condition = null): array
+    {
         $statement = $this->connect->prepare($sql);
 
         if($condition) {

@@ -2,7 +2,7 @@ input{
 margin: 15px;
 }
 
-.errors {
+.errors, .msg {
     background: crimson;
     color:whitesmoke;
     padding: 5px 10px;
@@ -17,3 +17,4 @@ margin: 15px;
     margin-left: 30px;
     font-size: 10px;
 }
+
