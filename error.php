@@ -1,18 +1,15 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon compte</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Page 404</title>
 </head>
 <body>
+    <h1 class="msg"> Error, authentification!!!</h1>
+    <p>ERROR . 404</p>
     <a href="/">Retour à la connexion</a>
-    <?php if(isset($_SESSION['username'])) : ?>
-        <h1><?=  'Hello ' . $_SESSION['username']; ?></h1> 
-    <?php endif; ?>
 </body>
 </html>

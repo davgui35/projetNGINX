@@ -12,7 +12,9 @@ require_once('postValidation.php');
    <link rel="stylesheet" href="style.css">
  </head>
  <body>
-  <span class="msg"><?= (isset($msg))? $msg : ''; ?></span>
+  <?php if(isset($msg)): ?>
+    <span class="msg"><?= (isset($msg))? $msg : ''; ?></span>
+  <?php endif; ?>
 	<form method="post" action="index.php">
   <fieldset>
     <legend>Se connecter</legend>
