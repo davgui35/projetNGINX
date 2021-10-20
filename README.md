@@ -1,5 +1,13 @@
 # projetNGINX
 
+## Utils
+
+- PHP => 7.4
+- Nginx
+- MariaDB
+- PhpMyAdmin
+- Jenkins
+- SonarQube
 
 ### Devenir super admin
 
