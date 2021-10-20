@@ -164,8 +164,6 @@ sudo chown -R www-data /var/log/nginx/monsite/
 
 ### Créer un hôte virtuel dans Nginx
 
-Dans le cas où vous souhaitez utiliser un CMS, je vous recommande de suivre la procédure décrite dans mon article sur l’installation facile de WordPress en 3 étapes et de sauter ce paragraphe.
-
 Tout d’abord, désactivons le site configuré par défaut dans Nginx :
 
 ```bash
