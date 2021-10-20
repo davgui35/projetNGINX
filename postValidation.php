@@ -33,7 +33,6 @@ if(isset($_POST['new_user'])){
     }
       // Test présence email
       if(isset($_POST['email']) && empty($_POST['email'])) { 
-        $test_email = false;
         $errors['email'] = 'Email is empty!';
     }
     else{
@@ -41,7 +40,6 @@ if(isset($_POST['new_user'])){
       $email = trim($_POST['email']);
       $email = strip_tags($email);
       if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $test_email = false;
         $errors['email'] = 'Email invalide';
       }
       else{
