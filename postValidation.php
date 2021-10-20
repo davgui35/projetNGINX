@@ -2,7 +2,8 @@
 $test_email = false;
 $test_password = false;
 $test_username = false;
-
+$errors = [];
+$success = [];
 // Connection
 require_once('Connect.php');
 $connexion = new Connect('newbase');
