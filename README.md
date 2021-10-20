@@ -8,6 +8,8 @@
 - PhpMyAdmin
 - Jenkins
 - SonarQube
+- Java
+- Maven
 
 ### Devenir super admin
 
