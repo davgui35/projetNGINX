@@ -13,13 +13,13 @@ require_once('postValidation.php');
  </head>
  <body>
   <?php if(isset($msg)): ?>
-    <span class="msg"><?= (isset($msg))? $msg : ''; ?></span>
+    <span class="msg1"><?= (isset($msg))? $msg : ''; ?></span>
   <?php endif; ?>
 	<form method="post" action="index.php">
   <fieldset>
     <legend>Se connecter</legend>
     <div>
-      <input type="text" name="username" id="username" value="<?= (isset($_POST['username']))? $_POST['username']: ''; ?>" placeholder="Username..." />
+      <input type="text" name="username" id="username" value="<?= (isset($_POST['username']))? $_POST['username']: ''; ?>" placeholder="Username..." autocomplete="off"/>
       <label for="username">Username</label>
     </div>
     <?php if(isset($errors['username'])): ?>
@@ -28,7 +28,7 @@ require_once('postValidation.php');
       <span class="success"><?= (isset($success['username']))? $success['username'] : ""; ?></span>
     <?php endif; ?>
     <div>
-      <input type="email" name="email" id="email" value="<?= (isset($_POST['email']))? $_POST['email']: ''; ?>" placeholder="Email..."/>
+      <input type="email" name="email" id="email" value="<?= (isset($_POST['email']))? $_POST['email']: ''; ?>" placeholder="Email..." autocomplete="off" required="required" />
       <label for="email ">Email</label>
     </div>
     <?php if(isset($errors['email'])): ?>
@@ -37,7 +37,7 @@ require_once('postValidation.php');
       <span class="success"><?= (isset($success['email']))? $success['email'] : ""; ?></span>
     <?php endif; ?>
     <div>
-      <input type="password" name="password" id="password" value="<?= (isset($_POST['password']))? $_POST['password']: ''; ?>" placeholder="Password.."/>
+      <input type="password" name="password" id="password" value="<?= (isset($_POST['password']))? $_POST['password']: ''; ?>" placeholder="Password.." required="required" autocomplete="off"/>
       <label for="password">Password</label>
     </div>
     <?php if(isset($errors['password'])): ?>

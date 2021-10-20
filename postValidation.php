@@ -87,9 +87,11 @@ if(isset($_POST['new_user'])){
     if($test_email && $test_password && $test_username && empty($errors)) {
         $_SESSION['username'] = ucfirst($username);
         header('location: home.php');
+    }else{
+        $msg = "Tous les champs ne sont pas renseignés correctement!";
     }
     
-    if(count($success) === 3 ){
+    if(count($success) === 3 && !empty($errors)){
         header('location: error.php');
     }
       

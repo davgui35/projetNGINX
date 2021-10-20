@@ -2,7 +2,7 @@ input{
 margin: 15px;
 }
 
-.errors, .msg {
+.errors, .msg1, .msg {
     background: crimson;
     color:whitesmoke;
     padding: 5px 10px;
